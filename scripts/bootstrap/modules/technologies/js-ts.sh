@@ -5,6 +5,7 @@ install_node_stack() {
   local node_formula="node"
   local formulas=(
     bun
+    node
   )
 
   if brew_formula_exists "node@24"; then

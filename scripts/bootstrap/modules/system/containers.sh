@@ -3,6 +3,7 @@ set -euo pipefail
 
 install_container_stack() {
   local formulae=(
+    colima
     docker
     docker-compose
     docker-credential-helper

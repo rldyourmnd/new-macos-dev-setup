@@ -4,15 +4,15 @@ Professional bootstrap for macOS developer workstations.
 
 This repository installs the complete stack you approved for daily work:
 
-- Bun + Node.js LTS (with Bun-first default package flow)
-- Python 3.13 + uv
+- Bun + Node.js LTS (with Bun-first default package flow, Node 24 kept active)
+- Python 3.13 + Python 3.14 + uv
 - Rust (via official rustup)
 - Flutter + Android command line tools + Android Studio + Chrome
 - Java OpenJDK 17
-- Modern C/C++ toolchain
+- Modern C/C++ toolchain (LLVM, CMake, Ninja, clang-format, GoogleTest, pkgconf)
 - AI CLI tools (Claude Code, OpenCode, Gemini CLI, OpenAI Codex)
-- Container runtime via OrbStack + Docker
-- Developer utilities: GitHub CLI, Git, jq, yq, rg, fzf, lazygit, lazydocker
+- Container runtime via OrbStack + Docker + Colima
+- Developer utilities: GitHub CLI, Git, jq, yq, rg, fzf, lazygit, lazydocker, HTTPie, ncdu, wget
 
 ## Repository structure
 
@@ -47,10 +47,10 @@ The script prints installed tool versions at the end.
 ## Language and technology modules
 
 - `system-tools.sh` installs cross-platform utility tooling for macOS.
-- `containers.sh` installs OrbStack and Docker.
+- `containers.sh` installs OrbStack, Docker, and Colima.
 - `js-ts.sh` installs Bun/Node and TS/JS tooling (TypeScript, Vitest, Playwright, Husky, Biome, ESLint, Prettier).
 - `python.sh` installs Python + uv + baseline quality toolchain.
-- `rust.sh` installs Rust.
+- `rust.sh` installs Rust toolchain via rustup.
 - `flutter.sh` installs Flutter + Android CLI + Android Studio + Chrome.
 - `java.sh` installs OpenJDK 17.
 - `cpp.sh` installs modern C/C++ toolchain.

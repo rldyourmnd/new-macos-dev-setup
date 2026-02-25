@@ -3,6 +3,7 @@ set -euo pipefail
 
 install_cpp_stack() {
   local formulae=(
+    clang-format
     cmake
     ninja
     llvm
@@ -10,6 +11,8 @@ install_cpp_stack() {
     conan
     vcpkg
     cppcheck
+    googletest
+    pkgconf
   )
   local selected_formulae=()
 

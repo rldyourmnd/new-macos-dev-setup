@@ -14,12 +14,15 @@ install_system_tools() {
     gh
     gnu-sed
     htop
+    httpie
     jq
     lazygit
     lazydocker
+    ncdu
     ripgrep
     tmux
     tree
+    wget
     yq
     zoxide
   )
