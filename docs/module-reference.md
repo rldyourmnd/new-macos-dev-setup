@@ -5,21 +5,23 @@
 `scripts/bootstrap/os/darwin.sh` runs modules in this order:
 
 1. `system/system-tools.sh`
-2. `system/containers.sh`
-3. `technologies/java.sh`
-4. `technologies/js-ts.sh`
-5. `technologies/python.sh`
-6. `technologies/rust.sh`
-7. `technologies/flutter.sh`
-8. `technologies/cpp.sh`
-9. `technologies/ai-cli.sh`
-10. `system/shell-env.sh`
+2. `system/stats.sh`
+3. `system/containers.sh`
+4. `technologies/java.sh`
+5. `technologies/js-ts.sh`
+6. `technologies/python.sh`
+7. `technologies/rust.sh`
+8. `technologies/flutter.sh`
+9. `technologies/cpp.sh`
+10. `technologies/ai-cli.sh`
+11. `system/shell-env.sh`
 
 ## Module map
 
 | Domain | Module | Main installs |
 | --- | --- | --- |
 | System | `system-tools.sh` | bash, git, gh, jq, yq, rg, fzf, lazygit, lazydocker, httpie, ncdu, wget, tmux |
+| System | `stats.sh` | Stats (cask) with optional tuned profile and login item |
 | Containers | `containers.sh` | OrbStack (cask), Docker CLI stack, Colima |
 | Java | `java.sh` | `openjdk@17` |
 | JS/TS | `js-ts.sh` | Bun via `oven-sh/bun`, Node + `node@24`, TypeScript, Vitest, Playwright, Husky, Biome, ESLint, Prettier |
