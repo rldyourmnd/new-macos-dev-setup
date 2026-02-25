@@ -75,7 +75,7 @@ configure_terminal_experience() {
     sed -i '' '/^# >>> better-macos terminal experience >>>$/d; /^# <<< better-macos terminal experience <<<$/d; /^# Prompt & history improvements$/d' "$zshrc"
   fi
 
-  if ! grep -q 'eval "$(starship init zsh)"' "$zshrc"; then
+  if ! grep -Fq "eval \"\$(starship init zsh)\"" "$zshrc"; then
     if [[ "${DRY_RUN:-0}" == "1" ]]; then
       log "DRY-RUN: append starship integration to ${zshrc}"
     else
@@ -87,7 +87,7 @@ EOF
     fi
   fi
 
-  if ! grep -q 'eval "$(atuin init zsh)"' "$zshrc"; then
+  if ! grep -Fq "eval \"\$(atuin init zsh)\"" "$zshrc"; then
     if [[ "${DRY_RUN:-0}" == "1" ]]; then
       log "DRY-RUN: append atuin integration to ${zshrc}"
     else
