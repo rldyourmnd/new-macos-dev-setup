@@ -13,4 +13,8 @@ install_python_stack() {
   )
 
   brew_install_formulas "${formulas[@]}"
+
+  if brew list --formula "python@3.13" >/dev/null 2>&1; then
+    run brew link --overwrite --force python@3.13
+  fi
 }

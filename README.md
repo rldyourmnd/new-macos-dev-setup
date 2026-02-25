@@ -5,7 +5,7 @@ Professional bootstrap for macOS developer workstations.
 This repository installs the complete stack you approved for daily work:
 
 - Bun + Node.js LTS (with Bun-first default package flow, Node 24 kept active)
-- Python 3.13 + Python 3.14 + uv
+- Python 3.13 as default + Python 3.14 as additional + uv
 - Rust (via official rustup)
 - Flutter + Android command line tools + Android Studio + Chrome
 - Java OpenJDK 17
@@ -49,7 +49,7 @@ The script prints installed tool versions at the end.
 - `system-tools.sh` installs cross-platform utility tooling for macOS.
 - `containers.sh` installs OrbStack, Docker, and Colima.
 - `js-ts.sh` installs Bun/Node and TS/JS tooling (TypeScript, Vitest, Playwright, Husky, Biome, ESLint, Prettier).
-- `python.sh` installs Python + uv + baseline quality toolchain.
+- `python.sh` installs Python with `3.13` as the default `python3`, plus additional `3.14`, then baseline quality tooling.
 - `rust.sh` installs Rust toolchain via rustup.
 - `flutter.sh` installs Flutter + Android CLI + Android Studio + Chrome.
 - `java.sh` installs OpenJDK 17.
