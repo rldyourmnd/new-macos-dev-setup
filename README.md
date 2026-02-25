@@ -1,52 +1,66 @@
 # better-macOS
 
-A professional macOS developer bootstrap repository for a high-performance local environment.
+Professional bootstrap for macOS developer workstations.
 
-## Цели
+This repository installs the complete stack you approved for daily work:
 
-- Стандартизировать установку инструментов на новой macOS машине.
-- Зафиксировать стек по языкам/направлениям (frontend, backend, mobile, systems).
-- Автоматизировать повторяемую установку через `brew` + bootstrap-скрипт.
+- Bun + Node.js LTS (with Bun-first default package flow)
+- Python 3.13 + uv
+- Rust (via official rustup)
+- Flutter + Android command line tools + Chrome
+- Java OpenJDK 17
+- Modern C/C++ toolchain
+- AI CLI tools (Claude Code, OpenCode, Gemini CLI, OpenAI Codex)
+- Container runtime via OrbStack + Docker
+- Developer utilities: GitHub CLI, Git, jq, yq, rg, fzf, lazygit, lazydocker
 
-## Что включено
+## Repository structure
 
-### Core tooling
-- GitHub CLI, Git, Bun + Node-совместимый runtime, Python 3.13 + uv, Rust, OpenJDK 17.
+- `scripts/bootstrap/bootstrap.sh` — unified entrypoint for all platforms.
+- `scripts/bootstrap/os/darwin.sh` — macOS module orchestrator.
+- `scripts/bootstrap/os/linux.sh` — Linux placeholder.
+- `scripts/bootstrap/os/windows.ps1` — Windows placeholder.
+- `scripts/bootstrap/modules/system/*.sh` — system utility modules.
+- `scripts/bootstrap/modules/technologies/*.sh` — language/framework/tooling modules.
+- `scripts/bootstrap/lib/common.sh` — shared bootstrap helpers.
+- `scripts/bootstrap/setup-macos-dev-stack.sh` — backward compatible wrapper.
 
-### Containers
-- Docker CLI + compose + credential helper.
-- OrbStack как runtime (практичный и быстрый для macOS).
-
-### Frontend / Web
-- Базовые утилиты для TS/JS и JSON/YAML обработки.
-
-### Mobile
-- Flutter + Android command line tools.
-
-### Systems / C/C++
-- CMake + Ninja, Conan, vcpkg, LLVM toolchain, ccache, cppcheck, GoogleTest.
-
-### Operability
-- `lazygit`, `lazydocker`, `tmux`, `zoxide`, `fzf`, `rg`, `jq`, `yq`, `tree`, и др.
-
-## Быстрый старт
+## Quick start
 
 ```bash
 cd /Users/rldyourmnd/projects/better-macOS
-./scripts/bootstrap/setup-macos-dev-stack.sh
+./scripts/bootstrap/bootstrap.sh
 ```
-
-Опционально для контейнеров:
 
 ```bash
-./scripts/bootstrap/setup-macos-dev-stack.sh --start-orbstack
+./scripts/bootstrap/bootstrap.sh --start-orbstack
 ```
 
-## Структура
+```bash
+./scripts/bootstrap/bootstrap.sh --dry-run
+```
 
-- `Brewfile` — единственный источник truth для Homebrew-пакетов.
-- `scripts/bootstrap/setup-macos-dev-stack.sh` — идемпотентный bootstrap скрипт.
+## Health check
 
-## Примечание по безопасности
+The script prints installed tool versions at the end.
 
-Скрипт не удаляет пакеты и не трогает настройки системы без прямого вызова. Перед любыми изменениями в текущем окружении лучше запускать с `--dry-run`.
+## Language and technology modules
+
+- `system-tools.sh` installs cross-platform utility tooling for macOS.
+- `containers.sh` installs OrbStack and Docker.
+- `js-ts.sh` installs Bun/Node and TS/JS quality tooling.
+- `python.sh` installs Python + uv + baseline quality toolchain.
+- `rust.sh` installs Rust.
+- `flutter.sh` installs Flutter + Android CLI + Chrome.
+- `java.sh` installs OpenJDK 17.
+- `cpp.sh` installs modern C/C++ toolchain.
+- `ai-cli.sh` installs Claude Code, OpenCode, Gemini CLI, Codex.
+
+## Notes
+
+- AI CLI tools are installed as requested:
+  - Claude Code via official curl installer
+  - OpenCode via official curl installer
+  - Gemini CLI via Homebrew
+  - Codex via Homebrew (cask preferred)
+- Windows and Linux scripts are present as placeholders and can be expanded next.

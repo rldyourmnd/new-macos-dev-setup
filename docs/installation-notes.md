@@ -1,7 +1,9 @@
 # Installation Notes
 
-- Скрипт рассчитан на macOS 14+ (Apple Silicon).
-- Для Flutter на новых проектах рекомендуется подтвердить Xcode и лицензии Apple.
-- Для Docker с OrbStack рекомендуется, чтобы после первого запуска была завершена настройка приложением.
-- Для Android Studio из App Store оставлять отдельно: репозиторий не затрагивает его cask-инсталляцию.
-- Если требуется строгая изоляция окружения (например, для CI), копируйте только соответствующие секции из `.zshrc` блока.
+- The scripts are optimized for macOS 14+ on Apple Silicon.
+- Flutter setup requires Xcode and Apple developer tooling. You can use `xcodebuild -runFirstLaunch` after installing Xcode.
+- OrbStack handles container runtime and Docker context switching.
+- Android CLI tools are installed via Homebrew; full SDK component installation is left project-specific.
+- Browser support is wired to Chrome by default for E2E workflows.
+- Windows and Linux scripts are placeholders and can be expanded with project-specific policies.
+- This repository intentionally keeps OS setup separated from technology modules and avoids inline shell aliases.
