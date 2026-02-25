@@ -20,6 +20,11 @@
 - Use Semantic Versioning.
 - Tag format: `vMAJOR.MINOR.PATCH`.
 
+## Active release target
+
+- `v0.0.2`: complete macOS setup baseline with full program coverage and configuration defaults.
+- Planning source: `docs/roadmap-v0.0.2.md`.
+
 ## Cut release
 
 ```bash
