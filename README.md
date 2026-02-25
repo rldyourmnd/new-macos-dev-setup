@@ -45,9 +45,12 @@ cd /Users/rldyourmnd/projects/better-macos
 - [Docs index](docs/README.md)
 - [System requirements](docs/system-requirements.md)
 - [macOS quick start](docs/macos-quickstart.md)
+- [Architecture](docs/architecture.md)
 - [Module reference](docs/module-reference.md)
 - [Verification guide](docs/verification.md)
 - [Maintenance guide](docs/maintenance.md)
+- [Release process](docs/release-process.md)
+- [Governance](docs/governance.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [Portability checklist](docs/portability-checklist.md)
 
