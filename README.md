@@ -2,14 +2,14 @@
 
 One-command macOS dev setup and optimization for a new computer.
 
-[![License: MIT](https://img.shields.io/github/license/rldyourmnd/new-macos-dev-setup)](LICENSE)
-[![CI](https://github.com/rldyourmnd/new-macos-dev-setup/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/rldyourmnd/new-macos-dev-setup/actions/workflows/ci.yml)
-[![OS](https://img.shields.io/badge/OS-macOS-black)](docs/system-requirements.md)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-Modular-2ea44f)](docs/architecture.md)
-[![Stars](https://img.shields.io/github/stars/rldyourmnd/new-macos-dev-setup?style=social)](https://github.com/rldyourmnd/new-macos-dev-setup/stargazers)
-[![Forks](https://img.shields.io/github/forks/rldyourmnd/new-macos-dev-setup?style=social)](https://github.com/rldyourmnd/new-macos-dev-setup/network/members)
+[![License: MIT](https://img.shields.io/github/license/rldyourmnd/new-macos-dev-setup)](https://github.com/rldyourmnd/new-macos-dev-setup/blob/main/LICENSE)
+[![CI](https://img.shields.io/github/actions/workflow/status/rldyourmnd/new-macos-dev-setup/ci.yml?branch=main&label=CI)](https://github.com/rldyourmnd/new-macos-dev-setup/actions/workflows/ci.yml)
+[![OS](https://img.shields.io/badge/OS-macOS-black)](https://github.com/rldyourmnd/new-macos-dev-setup/blob/main/docs/system-requirements.md)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-Modular-2ea44f)](https://github.com/rldyourmnd/new-macos-dev-setup/blob/main/docs/architecture.md)
+[![Stars](https://img.shields.io/github/stars/rldyourmnd/new-macos-dev-setup)](https://github.com/rldyourmnd/new-macos-dev-setup/stargazers)
+[![Forks](https://img.shields.io/github/forks/rldyourmnd/new-macos-dev-setup)](https://github.com/rldyourmnd/new-macos-dev-setup/network/members)
 [![Issues](https://img.shields.io/github/issues/rldyourmnd/new-macos-dev-setup)](https://github.com/rldyourmnd/new-macos-dev-setup/issues)
-[![Last commit](https://img.shields.io/github/last-commit/rldyourmnd/new-macos-dev-setup/main)](https://github.com/rldyourmnd/new-macos-dev-setup/commits/main)
+[![Last commit](https://img.shields.io/github/last-commit/rldyourmnd/new-macos-dev-setup?branch=main)](https://github.com/rldyourmnd/new-macos-dev-setup/commits/main)
 
 If this repo saves you setup time on a new Mac, please star it and share your setup results in Discussions.
 
