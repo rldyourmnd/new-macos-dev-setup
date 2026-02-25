@@ -18,11 +18,19 @@ The format is based on Keep a Changelog and this project follows Semantic Versio
   - Issue forms
   - PR template
   - `CODEOWNERS`
+- CI workflow:
+  - shell lint
+  - shell syntax checks
+  - bootstrap smoke execution
+- GitHub Wiki with domain-separated tooling documentation.
 
 ### Changed
 
 - Expanded docs set under `docs/`.
 - Hardened reproducibility across domain modules.
+- Strengthened Dependabot policy for GitHub Actions.
+- Repository renamed to `new-macos-dev-setup`.
+- Repository metadata optimized for discoverability (topics, description, homepage).
 
 ## [1.0.0] - 2026-02-25
 
