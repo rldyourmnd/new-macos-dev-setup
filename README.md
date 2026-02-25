@@ -99,6 +99,7 @@ git pull
 - [Release process](docs/release-process.md)
 - [Governance](docs/governance.md)
 - [Community health](docs/community-health.md)
+- [Discoverability playbook](docs/discoverability-playbook.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [Portability checklist](docs/portability-checklist.md)
 
