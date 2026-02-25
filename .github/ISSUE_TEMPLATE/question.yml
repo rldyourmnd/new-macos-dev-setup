@@ -1,0 +1,28 @@
+name: Usage question
+description: Ask a setup or usage question
+title: "[question] "
+labels:
+  - question
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and output
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: macOS version and architecture
+      placeholder: "macOS 26.4, arm64"
+    validations:
+      required: true
