@@ -23,6 +23,14 @@ cd new-macos-dev-setup
 ```
 
 ```bash
+./install-macos.sh --with-stats
+```
+
+```bash
+./install-macos.sh --with-stats --configure-stats
+```
+
+```bash
 ./scripts/bootstrap/bootstrap.sh --os darwin
 ```
 
