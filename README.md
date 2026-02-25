@@ -3,6 +3,7 @@
 One-command macOS dev setup and optimization for a new computer.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CI](https://github.com/rldyourmnd/new-macos-dev-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/rldyourmnd/new-macos-dev-setup/actions/workflows/ci.yml)
 [![OS](https://img.shields.io/badge/OS-macOS%20(Primary)-000000)](docs/system-requirements.md)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-Modular-2ea44f)](docs/architecture.md)
 [![Stars](https://img.shields.io/github/stars/rldyourmnd/new-macos-dev-setup?style=social)](https://github.com/rldyourmnd/new-macos-dev-setup/stargazers)
