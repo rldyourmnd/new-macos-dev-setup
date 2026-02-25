@@ -29,15 +29,15 @@ This repository installs the complete stack you approved for daily work:
 
 ```bash
 cd /Users/rldyourmnd/projects/better-macOS
-./scripts/bootstrap/bootstrap.sh
+./install-macos.sh
 ```
 
 ```bash
-./scripts/bootstrap/bootstrap.sh --start-orbstack
+./install-macos.sh --start-orbstack
 ```
 
 ```bash
-./scripts/bootstrap/bootstrap.sh --dry-run
+./install-macos.sh --dry-run
 ```
 
 ## Health check
