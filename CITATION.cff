@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "better-macos"
+type: software
+authors:
+  - family-names: "Silantyev"
+    given-names: "Danil"
+repository-code: "https://github.com/rldyourmnd/better-macos"
+license: "MIT"
+abstract: "Reproducible modular macOS workstation bootstrap for systems, backend, frontend, mobile, and AI CLI tooling."
