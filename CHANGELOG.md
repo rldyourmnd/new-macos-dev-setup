@@ -31,6 +31,7 @@ The format is based on Keep a Changelog and this project follows Semantic Versio
 - Strengthened Dependabot policy for GitHub Actions.
 - Repository renamed to `new-macos-dev-setup`.
 - Repository metadata optimized for discoverability (topics, description, homepage).
+- Rust module now installs cargo quality tooling (`cargo-audit`, `cargo-deny`, `cargo-edit`, `cargo-generate`, `cargo-outdated`, `cargo-watch`) for full parity with workstation baseline.
 
 ## [0.0.1] - 2026-02-25
 
