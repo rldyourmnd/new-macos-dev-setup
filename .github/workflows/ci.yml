@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Install shellcheck
         run: |
@@ -37,19 +37,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Bash syntax check
         run: |
           find scripts -type f -name "*.sh" -print0 | xargs -0 -n1 bash -n
           bash -n install-macos.sh
 
+  workflow_lint:
+    name: Workflow Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Install actionlint
+        run: |
+          version="1.7.11"
+          temp_dir="$(mktemp -d)"
+          curl -fsSL "https://github.com/rhysd/actionlint/releases/download/v${version}/actionlint_${version}_linux_amd64.tar.gz" -o "${temp_dir}/actionlint.tgz"
+          tar -xzf "${temp_dir}/actionlint.tgz" -C "${temp_dir}"
+          sudo install "${temp_dir}/actionlint" /usr/local/bin/actionlint
+
+      - name: Lint workflows
+        run: actionlint -color
+
+  docs_lint:
+    name: Docs Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Markdown lint
+        run: npx --yes markdownlint-cli@0.45.0 --config .markdownlint.yml "**/*.md"
+
   bootstrap_smoke:
     name: Bootstrap Smoke
     runs-on: macos-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Entrypoint help
         run: |
