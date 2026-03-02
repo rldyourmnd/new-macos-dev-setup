@@ -6,6 +6,9 @@
 .cache/
 .venv/
 venv/
+.serena/
+.claude/
+.codex/
 
 # Temporary debug artifacts
 /tmp

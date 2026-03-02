@@ -23,6 +23,6 @@ body:
     attributes:
       label: Environment
       description: macOS version and architecture
-      placeholder: "macOS 26.4, arm64"
+      placeholder: "macOS 15.3, arm64"
     validations:
       required: true

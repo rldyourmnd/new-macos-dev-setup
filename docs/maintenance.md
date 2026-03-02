@@ -3,7 +3,7 @@
 ## Update workflow
 
 ```bash
-cd /Users/rldyourmnd/projects/new-macos-dev-setup
+cd ~/projects/new-macos-dev-setup
 git pull
 ./install-macos.sh --start-orbstack
 ```

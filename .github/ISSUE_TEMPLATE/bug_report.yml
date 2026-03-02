@@ -12,7 +12,7 @@ body:
     id: os_version
     attributes:
       label: macOS version
-      placeholder: "macOS 26.4"
+      placeholder: "macOS 15.3"
     validations:
       required: true
   - type: input
