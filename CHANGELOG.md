@@ -6,11 +6,13 @@ The format is based on Keep a Changelog and this project follows Semantic Versio
 
 ## [Unreleased]
 
-### Added
+## [0.0.4] - 2026-07-07
 
 ### Changed
 
-### Removed
+- Mark the repository ABANDONED: frozen history, superseded by
+  `NDDev-it-com/rldyour-new-mac-or-ubuntu` (macOS + Ubuntu workstation
+  bootstrap with the terminal layer). Final release before archiving.
 
 ## [0.0.3] - 2026-03-02
 

@@ -1,3 +1,8 @@
+> ⚠️ **ABANDONED** (2026-07-07). This repository is frozen history. The owner's
+> workstation bootstrap (macOS **and** Ubuntu: system layer, LSPs, quality
+> gates, AI CLI runtimes, and the full terminal layer) now lives in
+> [`NDDev-it-com/rldyour-new-mac-or-ubuntu`](https://github.com/NDDev-it-com/rldyour-new-mac-or-ubuntu).
+
 # new-macos-dev-setup
 
 One-command macOS dev setup and optimization for a new computer.
