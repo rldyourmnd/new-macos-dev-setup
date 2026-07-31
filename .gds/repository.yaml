@@ -1,0 +1,37 @@
+schema_version: 1
+repository:
+  id: "repo_01KYVP9WMQ9RXE1DWP1E2SMTTZ"
+  display_name: "new-macos-dev-setup"
+  roles:
+    - "project"
+  lifecycle: "archived"
+provider:
+  type: "github"
+  installation: "installation:github-personal"
+  repository_id: 1166163683
+  owner: "rldyourmnd"
+  name: "new-macos-dev-setup"
+classification:
+  portfolios:
+    - "portfolio:archived-projects"
+  visibility_contract: "public"
+  data_classification: "public"
+policy:
+  profiles:
+    - "repository-default"
+    - "personal-default"
+  rollout_ring: "standard"
+git:
+  default_branch: "main"
+  integration: "pull-request"
+  branch_model: "task-branches"
+  handoff_pr: "never"
+  cleanup: "manual"
+agent:
+  context_profile: "project-default"
+  generated_agents: false
+  serena:
+    enabled: false
+    provenance_required: false
+release:
+  mode: "none"
