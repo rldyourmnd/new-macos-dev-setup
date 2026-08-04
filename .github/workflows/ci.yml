@@ -79,19 +79,19 @@ jobs:
     name: docs-quality
     permissions:
       contents: read
-    uses: NDDev-it-com/ci-workflows/.github/workflows/docs-quality.yml@ca538d59aef41c1bb03c3669366c368128d5af88
+    uses: NDDev-it-com/ci-workflows/.github/workflows/docs-quality.yml@b05016e27151e2d5b3f07e1d856fff50f635ab15
 
   actionlint:
     name: actionlint
     permissions:
       contents: read
-    uses: NDDev-it-com/ci-workflows/.github/workflows/actionlint.yml@ca538d59aef41c1bb03c3669366c368128d5af88
+    uses: NDDev-it-com/ci-workflows/.github/workflows/actionlint.yml@b05016e27151e2d5b3f07e1d856fff50f635ab15
 
   secret-scan:
     name: secret-scan
     permissions:
       contents: read
-    uses: NDDev-it-com/ci-workflows/.github/workflows/secret-scan.yml@ca538d59aef41c1bb03c3669366c368128d5af88
+    uses: NDDev-it-com/ci-workflows/.github/workflows/secret-scan.yml@b05016e27151e2d5b3f07e1d856fff50f635ab15
 
   zizmor:
     name: zizmor (SARIF)
@@ -99,11 +99,11 @@ jobs:
       actions: read
       contents: read
       security-events: write
-    uses: NDDev-it-com/ci-workflows/.github/workflows/zizmor-sarif.yml@ca538d59aef41c1bb03c3669366c368128d5af88
+    uses: NDDev-it-com/ci-workflows/.github/workflows/zizmor-sarif.yml@b05016e27151e2d5b3f07e1d856fff50f635ab15
 
   dependency-review:
     name: dependency-review
     permissions:
       contents: read
       pull-requests: write
-    uses: NDDev-it-com/ci-workflows/.github/workflows/public-dependency-review.yml@ca538d59aef41c1bb03c3669366c368128d5af88
+    uses: NDDev-it-com/ci-workflows/.github/workflows/public-dependency-review.yml@b05016e27151e2d5b3f07e1d856fff50f635ab15
